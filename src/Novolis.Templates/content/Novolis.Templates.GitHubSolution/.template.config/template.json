@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Novolis",
+  "classifications": [
+    "Common",
+    "Solution"
+  ],
+  "identity": "Novolis.Templates.GitHubSolution",
+  "name": "Novolis.Templates.GitHubSolution",
+  "description": "To create a new solution aimed at GitHub and Nuget.org hosting.",
+  "shortName": "novolis-githubsln",
+  "sourceName": "Novolis.Templates.GitHubSolution",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  }
+}

@@ -1,0 +1,14 @@
+name: Publish: NuGet
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+jobs:
+  release_job:
+    name: Publish NuGet
+    if: github.event_name == 'release' || github.event_name == 'workflow_dispatch'
+    uses: Novolis-Platform/novolis-workflows/.github/workflows/dotnet-publish-on-release.yml@main
+    secrets: inherit
+    

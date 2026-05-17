@@ -1,14 +1,15 @@
 {
   "packages": {
     "Novolis.Templates": {
+      "project": "src/Novolis.Templates/Novolis.Templates.csproj",
       "paths": [
         "src/Novolis.Templates/**",
-        "tests/**",
+        "tests/Novolis.Templates.SmokeTests/**",
         "Directory.Build.props",
         "Directory.Packages.props",
-        "global.json"
-      ],
-      "project": "src/Novolis.Templates/Novolis.Templates.csproj"
+        "global.json",
+        "Novolis.Templates.slnx"
+      ]
     }
   }
 }

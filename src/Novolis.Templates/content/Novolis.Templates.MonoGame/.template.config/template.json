@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Novolis",
+  "classifications": [
+    "Common",
+    "MonoGame",
+    "Game"
+  ],
+  "identity": "Novolis.Templates.MonoGame",
+  "name": "Novolis.Templates.MonoGame",
+  "description": "Monogame template for dotnet new",
+  "shortName": "novolismonogame",
+  "sourceName": "Novolis.Templates.MonoGame",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Novolis",
+  "classifications": [
+    "Common",
+    "Microservice"
+  ],
+  "identity": "novolismicroservice",
+  "name": "Novolis.Templates.Microservice",
+  "description": "Novolis.Templates.Microservice is a template for creating a microservice in C#.",
+  "shortName": "novolismicroservice",
+  "sourceName": "Novolis.Templates.Microservice",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  }
+}

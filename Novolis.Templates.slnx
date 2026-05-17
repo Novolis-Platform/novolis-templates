@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Novolis.Templates/Novolis.Templates.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Novolis.Templates.SmokeTests/Novolis.Templates.SmokeTests.csproj" />
+  </Folder>
+</Solution>

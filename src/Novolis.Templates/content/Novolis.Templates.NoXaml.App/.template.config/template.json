@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Novolis",
+  "classifications": [
+    "Common",
+    "WPF"
+  ],
+  "identity": "Novolis.Templates.NoXaml.App",
+  "name": "Novolis.Templates.NoXaml.App",
+  "description": "For the crazy people that love WPF but don't want to write a lot of XAML-code",
+  "shortName": "novolis-noxamlapp",
+  "sourceName": "Novolis.Templates.NoXaml.App",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}

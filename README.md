@@ -1,32 +1,22 @@
-# Templates
+# novolis-templates
 
-## What it is
+`dotnet new` template packs for Novolis (`Novolis.Templates`).
 
-Templates in the Novolis ecosystem.
+## Status
 
-## Current status
+Wave 6 migration from Frank.Templates complete (7 packs; NugetSolution excluded). See [wave-6-templates.md](../novolis-governance/docs/extraction-briefs/wave-6-templates.md).
 
-This repository is reserved for the Novolis Templates package.
-Implementation will be migrated or built in later steps.
+**CI:** default workflow builds the repo; template pack smoke runs via `Novolis.Templates.SmokeTests`. WPF and MonoGame templates are Windows-only for full `dotnet build`.
 
-## Install
+## Local validation
 
-Not yet published.
-
-## Quick start
-
-Not yet available.
+```bash
+dotnet pack src/Novolis.Templates/Novolis.Templates.csproj -c Release -o ./artifacts
+dotnet test Novolis.Templates.slnx
+```
 
 ## Documentation
 
 - [Getting started](docs/getting-started.md)
 - [Design](docs/design.md)
 - [Release](docs/release.md)
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## Security
-
-See [SECURITY.md](SECURITY.md).

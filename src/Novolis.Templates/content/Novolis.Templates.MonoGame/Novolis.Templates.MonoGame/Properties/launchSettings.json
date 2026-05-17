@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Novolis.Templates.MonoGame": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
