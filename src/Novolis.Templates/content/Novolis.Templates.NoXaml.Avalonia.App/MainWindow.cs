@@ -11,9 +11,7 @@ internal sealed class MainWindow : Window
     public MainWindow(ILogger<MainWindow> logger)
     {
         _logger = logger;
-        _textBox = new MyTextBox(
-            "Write something",
-            async (_, _) => await MessageDialog.ShowAsync(this, _textBox.Text));
+        _textBox = new MyTextBox("Write something", OnTextChanged);
 
         ConfigureWindow();
         Content = _textBox;
@@ -27,6 +25,11 @@ internal sealed class MainWindow : Window
         MinHeight = 256;
         SizeToContent = SizeToContent.WidthAndHeight;
         WindowStartupLocation = WindowStartupLocation.CenterScreen;
+    }
+
+    private async void OnTextChanged(object? sender, TextChangedEventArgs e)
+    {
+        await MessageDialog.ShowAsync(this, _textBox.Text);
     }
 
     private void OnClosing(object? sender, WindowClosingEventArgs e)

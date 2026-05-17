@@ -1,3 +1,6 @@
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+
 namespace Novolis.Templates.NoXaml.Avalonia.Solution.App;
 
 public class Worker : BackgroundService

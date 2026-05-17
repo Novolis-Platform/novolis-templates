@@ -1,3 +1,5 @@
+using Microsoft.Extensions.Hosting;
+
 namespace Novolis.Templates.NoXaml.Avalonia.Solution.App.Extensions;
 
 internal static class ServicesCollectionExtensions
