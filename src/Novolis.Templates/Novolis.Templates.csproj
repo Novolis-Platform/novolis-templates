@@ -12,7 +12,7 @@
     <IncludeContentInPack>true</IncludeContentInPack>
     <ContentTargetFolders>content</ContentTargetFolders>
     <IsPackable>true</IsPackable>
-    <NoWarn>$(NoWarn);1591</NoWarn>
+    <NoWarn>$(NoWarn);1591;NU5123</NoWarn>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
     <NoDefaultExcludes>true</NoDefaultExcludes>

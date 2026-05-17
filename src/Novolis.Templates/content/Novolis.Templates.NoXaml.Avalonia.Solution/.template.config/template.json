@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Novolis",
+  "classifications": [
+    "Common",
+    "Avalonia",
+    "NoXaml"
+  ],
+  "identity": "Novolis.Templates.NoXaml.Avalonia.Solution",
+  "name": "Novolis.Templates.NoXaml.Avalonia.Solution",
+  "description": "Layered Avalonia solution built in C# only (no AXAML), with Generic Host and background services.",
+  "shortName": "novolis-noxaml-avalonia-sln",
+  "sourceName": "Novolis.Templates.NoXaml.Avalonia.Solution",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  }
+}

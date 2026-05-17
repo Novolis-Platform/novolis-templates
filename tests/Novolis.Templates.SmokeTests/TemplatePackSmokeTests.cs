@@ -41,6 +41,11 @@ public class TemplatePackSmokeTests
             await RunDotnet($"new novolis-testcontainers-module -n SmokeModule -o \"{tcDir}\" --force", RepoRoot);
             File.Exists(Path.Combine(tcDir, "SmokeModule.csproj")).Should().BeTrue(
                 "testcontainers template is a scaffold; instantiate smoke only");
+
+            var avaloniaDir = Path.Combine(ArtifactsDir, "noxaml-avalonia");
+            await RunDotnet($"new novolis-noxaml-avalonia-sln -n SmokeAvalonia -o \"{avaloniaDir}\" --force", RepoRoot);
+            var avaloniaSln = Directory.GetFiles(avaloniaDir, "*.sln").Single();
+            await RunDotnet($"build \"{avaloniaSln}\"", avaloniaDir);
         }
         finally
         {

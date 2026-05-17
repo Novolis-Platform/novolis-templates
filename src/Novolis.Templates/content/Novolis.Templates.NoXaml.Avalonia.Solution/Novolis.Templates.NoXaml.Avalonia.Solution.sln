@@ -1,0 +1,64 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Novolis.Templates.NoXaml.Avalonia.Solution.App", "Novolis.Templates.NoXaml.Avalonia.Solution.App\Novolis.Templates.NoXaml.Avalonia.Solution.App.csproj", "{7F8123C3-BB75-42E8-B257-3DA20562581F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Novolis.Templates.NoXaml.Avalonia.Solution.Controls", "Novolis.Templates.NoXaml.Avalonia.Solution.Controls\Novolis.Templates.NoXaml.Avalonia.Solution.Controls.csproj", "{84D42325-7A00-47B9-99AD-D941CEDE8795}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Novolis.Templates.NoXaml.Avalonia.Solution.Models", "Novolis.Templates.NoXaml.Avalonia.Solution.Models\Novolis.Templates.NoXaml.Avalonia.Solution.Models.csproj", "{DF7943D5-9B85-4003-AF84-C8E75694189C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Novolis.Templates.NoXaml.Avalonia.Solution.Tests", "Novolis.Templates.NoXaml.Avalonia.Solution.Tests\Novolis.Templates.NoXaml.Avalonia.Solution.Tests.csproj", "{455B6149-0511-4D11-9D61-7AF4F4CAE23D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Novolis.Templates.NoXaml.Avalonia.Solution.Core", "Novolis.Templates.NoXaml.Avalonia.Solution.Core\Novolis.Templates.NoXaml.Avalonia.Solution.Core.csproj", "{2C8B3BC4-0D95-4CD5-AC45-12231ED2A62E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{F59CB151-AD79-4950-8E69-5FF65A5ECEB2}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		build.ps1 = build.ps1
+		Directory.Build.props = Directory.Build.props
+		install.ps1 = install.ps1
+		nuget.config = nuget.config
+		push.ps1 = push.ps1
+		README.md = README.md
+		test.ps1 = test.ps1
+		uninstall.ps1 = uninstall.ps1
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F8123C3-BB75-42E8-B257-3DA20562581F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F8123C3-BB75-42E8-B257-3DA20562581F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F8123C3-BB75-42E8-B257-3DA20562581F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F8123C3-BB75-42E8-B257-3DA20562581F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84D42325-7A00-47B9-99AD-D941CEDE8795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84D42325-7A00-47B9-99AD-D941CEDE8795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84D42325-7A00-47B9-99AD-D941CEDE8795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84D42325-7A00-47B9-99AD-D941CEDE8795}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF7943D5-9B85-4003-AF84-C8E75694189C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF7943D5-9B85-4003-AF84-C8E75694189C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF7943D5-9B85-4003-AF84-C8E75694189C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF7943D5-9B85-4003-AF84-C8E75694189C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{455B6149-0511-4D11-9D61-7AF4F4CAE23D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{455B6149-0511-4D11-9D61-7AF4F4CAE23D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{455B6149-0511-4D11-9D61-7AF4F4CAE23D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{455B6149-0511-4D11-9D61-7AF4F4CAE23D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C8B3BC4-0D95-4CD5-AC45-12231ED2A62E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C8B3BC4-0D95-4CD5-AC45-12231ED2A62E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C8B3BC4-0D95-4CD5-AC45-12231ED2A62E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C8B3BC4-0D95-4CD5-AC45-12231ED2A62E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7240E4F-3F5B-4AEF-9F1B-3F867139B8C2}
+	EndGlobalSection
+EndGlobal

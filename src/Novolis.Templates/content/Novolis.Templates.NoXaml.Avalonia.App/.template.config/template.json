@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Novolis",
+  "classifications": [
+    "Common",
+    "Avalonia",
+    "NoXaml"
+  ],
+  "identity": "Novolis.Templates.NoXaml.Avalonia.App",
+  "name": "Novolis.Templates.NoXaml.Avalonia.App",
+  "description": "Avalonia desktop app built in C# only (no AXAML), with Generic Host and background services.",
+  "shortName": "novolis-noxaml-avalonia-app",
+  "sourceName": "Novolis.Templates.NoXaml.Avalonia.App",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
