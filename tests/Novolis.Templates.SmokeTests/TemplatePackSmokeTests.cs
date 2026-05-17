@@ -1,5 +1,5 @@
 using System.Diagnostics;
-using FluentAssertions;
+using TUnit.Core;
 
 namespace Novolis.Templates.SmokeTests;
 
@@ -39,8 +39,8 @@ public class TemplatePackSmokeTests
 
             var tcDir = Path.Combine(ArtifactsDir, "testcontainers");
             await RunDotnet($"new novolis-testcontainers-module -n SmokeModule -o \"{tcDir}\" --force", RepoRoot);
-            File.Exists(Path.Combine(tcDir, "SmokeModule.csproj")).Should().BeTrue(
-                "testcontainers template is a scaffold; instantiate smoke only");
+            await Assert.That(File.Exists(Path.Combine(tcDir, "SmokeModule.csproj"))).IsTrue()
+                .Because("testcontainers template is a scaffold; instantiate smoke only");
 
             var avaloniaDir = Path.Combine(ArtifactsDir, "noxaml-avalonia");
             await RunDotnet($"new novolis-noxaml-avalonia-sln -n SmokeAvalonia -o \"{avaloniaDir}\" --force", RepoRoot);
@@ -75,7 +75,8 @@ public class TemplatePackSmokeTests
             TestContext.Current?.OutputWriter.WriteLine(stderr);
         }
 
-        process.ExitCode.Should().Be(0, $"dotnet {arguments} failed");
+        await Assert.That(process.ExitCode).IsEqualTo(0)
+            .Because($"dotnet {arguments} failed");
     }
 
     private static async Task RunDotnetOptional(string arguments, string workingDirectory)

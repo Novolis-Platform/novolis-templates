@@ -1,5 +1,5 @@
-using FluentAssertions;
 using Novolis.Templates.Microservice.Services;
+using TUnit.Core;
 
 namespace Novolis.Templates.Microservice.Tests.Services;
 
@@ -15,7 +15,7 @@ public class CompanyServiceTests
         var result = await service.GetCompanyAsync(996967158);
 
         TestContext.Current?.OutputWriter.WriteLine(result.Content);
-        result.Should().NotBeNull();
+        await Assert.That(result).IsNotNull();
     }
 
     [Test]
@@ -28,6 +28,6 @@ public class CompanyServiceTests
         var result = await service.SearchForLegalEntityAsync("NRK");
 
         TestContext.Current?.OutputWriter.WriteLine(result.Content);
-        result.Should().NotBeNull();
+        await Assert.That(result).IsNotNull();
     }
 }
