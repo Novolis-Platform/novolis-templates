@@ -1,11 +1,11 @@
 # Novolis.Templates
 
-`dotnet new` template packs for the Novolis ecosystem.
+`dotnet new` template packs for Novolis solutions and projects.
 
 ## Install
 
 ```bash
-dotnet new install Novolis.Templates::0.1.0-preview.1
+dotnet new install Novolis.Templates
 ```
 
 Local development:
@@ -14,6 +14,8 @@ Local development:
 dotnet pack src/Novolis.Templates/Novolis.Templates.csproj -c Release -o ./artifacts
 dotnet new install ./artifacts/Novolis.Templates.*.nupkg
 ```
+
+**Prerequisites:** [.NET 10 SDK](https://dotnet.microsoft.com/download) (`net10.0`).
 
 ## Templates
 
@@ -27,15 +29,18 @@ dotnet new install ./artifacts/Novolis.Templates.*.nupkg
 | `novolis-semantic-kernel` | Semantic Kernel project |
 | `novolis-testcontainers-module` | Testcontainers module scaffold |
 
-## CI and platform notes
+## Related packages
 
-- Linux CI runs `dotnet pack` and smoke tests (`novolismicroservice` build + `novolis-testcontainers-module` instantiate).
-- **MonoGame** templates require the Windows SDK and are not built in default Linux CI; verify locally on Windows.
-- **NoXaml Avalonia** templates cross-compile on Linux CI (`dotnet build`); run the app locally to verify UI.
-- **Semantic Kernel** template is a starter with intentional `TODO` placeholders and is not part of automated build smoke.
+| Package | When to use |
+|---------|-------------|
+| *(this package)* | Install template packs via `dotnet new install` |
 
-## Uninstall
+## More documentation
 
-```bash
-dotnet new uninstall Novolis.Templates
-```
+- [Getting started](https://github.com/Novolis-Platform/novolis-templates/blob/main/docs/getting-started.md)
+- [Design](https://github.com/Novolis-Platform/novolis-templates/blob/main/docs/design.md)
+- [Documentation policy](https://github.com/Novolis-Platform/novolis-governance/blob/main/docs/documentation-policy.md)
+
+## Support
+
+Template pack for Novolis platform scaffolds. MonoGame templates require Windows SDK for full build; see repo README for CI notes.

@@ -11,14 +11,12 @@
     <IncludeContentInPack>true</IncludeContentInPack>
     <ContentTargetFolders>content</ContentTargetFolders>
     <IsPackable>true</IsPackable>
-    <NoWarn>$(NoWarn);1591;NU5123</NoWarn>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <NoWarn>$(NoWarn);NU5123</NoWarn>
     <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
     <NoDefaultExcludes>true</NoDefaultExcludes>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="content/**" Exclude="content/**/bin/**;content/**/obj/**;content/**/artifacts/**;content/**/.idea/**" />
-    <None Include="README.md" Pack="true" PackagePath="\" />
     <None Include="icon.png" Pack="true" PackagePath="\" Condition="Exists('icon.png')" />
   </ItemGroup>
 </Project>
