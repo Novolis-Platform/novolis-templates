@@ -17,6 +17,13 @@ dotnet new install ./artifacts/Novolis.Templates.*.nupkg
 
 **Prerequisites:** [.NET 10 SDK](https://dotnet.microsoft.com/download) (`net10.0`).
 
+## Quick start
+
+```bash
+dotnet new novolismicroservice -n MyService
+dotnet new novolis-noxaml-avalonia-app -n MyApp
+```
+
 ## Templates
 
 | Short name | Description |
