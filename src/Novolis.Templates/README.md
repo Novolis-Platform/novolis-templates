@@ -20,34 +20,29 @@ dotnet new install ./artifacts/Novolis.Templates.*.nupkg
 ## Quick start
 
 ```bash
-dotnet new novolismicroservice -n MyService
-dotnet new novolis-noxaml-avalonia-app -n MyApp
+dotnet new novolismicroservice -n Invoicing
+dotnet new novolis-githubsln -n MyLibrary
+dotnet new novolis-noxaml-avalonia-sln -n MyDesktopApp
 ```
 
 ## Templates
 
 | Short name | Description |
-|------------|-------------|
-| `novolismicroservice` | Microservice solution |
-| `novolismonogame` | MonoGame project |
-| `novolis-noxaml-avalonia-app` | Avalonia app without AXAML (code-only UI) |
-| `novolis-noxaml-avalonia-sln` | Layered Avalonia solution without AXAML |
-| `novolis-githubsln` | GitHub-oriented solution |
-| `novolis-semantic-kernel` | Semantic Kernel project |
-| `novolis-testcontainers-module` | Testcontainers module scaffold |
+| --- | --- |
+| `novolismicroservice` | Distributed service (Api, Core, Models, Client, Data, Migrations, Tests) |
+| `novolis-githubsln` | GitHub-oriented library or tool repository |
+| `novolis-noxaml-avalonia-app` | Single-project Avalonia app (code-only UI) |
+| `novolis-noxaml-avalonia-sln` | Layered Avalonia solution (code-only UI) |
+| `novolismonogame` | MonoGame project (Windows SDK for full build) |
 
-## Related packages
+## Governance
 
-| Package | When to use |
-|---------|-------------|
-| *(this package)* | Install template packs via `dotnet new install` |
+- Distributed services: [architectural guideline](https://github.com/Novolis-Platform/novolis-governance/blob/main/docs/architectural-ideals/distributed-services-architectural-guideline.md)
+- Repositories and docs: [repository-policy.md](https://github.com/Novolis-Platform/novolis-governance/blob/main/docs/repository-policy.md)
+- Gaming scaffolds: [gaming-layer-policy.md](https://github.com/Novolis-Platform/novolis-governance/blob/main/docs/gaming-layer-policy.md)
 
 ## More documentation
 
 - [Getting started](https://github.com/Novolis-Platform/novolis-templates/blob/main/docs/getting-started.md)
 - [Design](https://github.com/Novolis-Platform/novolis-templates/blob/main/docs/design.md)
 - [Documentation policy](https://github.com/Novolis-Platform/novolis-governance/blob/main/docs/documentation-policy.md)
-
-## Support
-
-Template pack for Novolis platform scaffolds. MonoGame templates require Windows SDK for full build; see repo README for CI notes.

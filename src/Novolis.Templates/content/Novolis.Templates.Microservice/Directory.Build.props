@@ -28,8 +28,15 @@
         <RepositoryType>git</RepositoryType>
     </PropertyGroup>
 
-    <ItemGroup>
+    <PropertyGroup Label="Source link">
+        <EnableSourceLink Condition="'$(EnableSourceLink)' == ''">false</EnableSourceLink>
+    </PropertyGroup>
+
+    <ItemGroup Condition="'$(EnableSourceLink)' == 'true'">
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All"/>
+    </ItemGroup>
+
+    <ItemGroup>
         <None Include="../README.md" Pack="true" PackagePath="\" Condition="!Exists('README.md')"/>
         <None Include="README.md" Pack="true" PackagePath="\" Condition="Exists('README.md')"/>
         <None Include="../icon.png" Pack="true" PackagePath="\" Condition="!Exists('icon.png')"/>
@@ -62,7 +69,13 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="$(MSBuildProjectDirectory.Contains('.Tests'))">
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
     <NoWarn>$(NoWarn);CA1001;CA1051;CA1062;CA1707;CA1716;CA2007;CA2200;CA2234</NoWarn>
     <EnableNETAnalyzers>false</EnableNETAnalyzers>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="$(MSBuildProjectDirectory.Contains('.Api')) Or $(MSBuildProjectDirectory.Contains('.Data'))">
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
 </Project>

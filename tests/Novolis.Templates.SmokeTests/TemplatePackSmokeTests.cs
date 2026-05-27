@@ -10,7 +10,7 @@ public class TemplatePackSmokeTests
     private static readonly string ArtifactsDir = Path.Combine(Path.GetTempPath(), "novolis-templates-smoke");
 
     [Test]
-    public async Task Pack_install_microservice_and_testcontainers_build()
+    public async Task Pack_install_templates_and_build_scaffolds()
     {
         if (Directory.Exists(ArtifactsDir))
         {
@@ -36,11 +36,7 @@ public class TemplatePackSmokeTests
             await RunDotnet($"new novolismicroservice -n SmokeMicro -o \"{microDir}\" --force", RepoRoot);
             var microSln = Directory.GetFiles(microDir, "*.sln").Single();
             await RunDotnet($"build \"{microSln}\"", microDir);
-
-            var tcDir = Path.Combine(ArtifactsDir, "testcontainers");
-            await RunDotnet($"new novolis-testcontainers-module -n SmokeModule -o \"{tcDir}\" --force", RepoRoot);
-            await Assert.That(File.Exists(Path.Combine(tcDir, "SmokeModule.csproj"))).IsTrue()
-                .Because("testcontainers template is a scaffold; instantiate smoke only");
+            await RunDotnet($"test --solution \"{microSln}\" --no-build", microDir);
 
             var avaloniaDir = Path.Combine(ArtifactsDir, "noxaml-avalonia");
             await RunDotnet($"new novolis-noxaml-avalonia-sln -n SmokeAvalonia -o \"{avaloniaDir}\" --force", RepoRoot);

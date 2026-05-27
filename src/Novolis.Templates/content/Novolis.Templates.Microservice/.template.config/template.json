@@ -3,11 +3,12 @@
   "author": "Novolis",
   "classifications": [
     "Common",
-    "Microservice"
+    "Microservice",
+    "Web"
   ],
   "identity": "novolismicroservice",
-  "name": "Novolis.Templates.Microservice",
-  "description": "Novolis.Templates.Microservice is a template for creating a microservice in C#.",
+  "name": "Novolis distributed service",
+  "description": "Novolis distributed service solution (Api, Core, Models, Client, Data, Migrations, Tests).",
   "shortName": "novolismicroservice",
   "sourceName": "Novolis.Templates.Microservice",
   "tags": {

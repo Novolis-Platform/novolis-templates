@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.1.32414.318
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Novolis.Templates.Microservice", "Novolis.Templates.Microservice\Novolis.Templates.Microservice.csproj", "{89EEE06C-FBF5-45DD-B386-2A4FEFDEA8FA}"
 EndProject
@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Novolis.Templates.Microserv
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Novolis.Templates.Microservice.Client", "Novolis.Templates.Microservice.Client\Novolis.Templates.Microservice.Client.csproj", "{CB930182-A05E-4F97-ACF7-CFC1C14E3E04}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Novolis.Templates.Microservice.Client.Models", "Novolis.Templates.Microservice.Client.Models\Novolis.Templates.Microservice.Client.Models.csproj", "{93898F7D-B8A0-4CBA-B09B-62F8CA474A90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Novolis.Templates.Microservice.Models", "Novolis.Templates.Microservice.Models\Novolis.Templates.Microservice.Models.csproj", "{93898F7D-B8A0-4CBA-B09B-62F8CA474A90}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Novolis.Templates.Microservice.Data", "Novolis.Templates.Microservice.Data\Novolis.Templates.Microservice.Data.csproj", "{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Novolis.Templates.Microservice.Data.Migrations", "Novolis.Templates.Microservice.Data.Migrations\Novolis.Templates.Microservice.Data.Migrations.csproj", "{B2C3D4E5-F6A7-8901-BCDE-F12345678901}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Novolis.Templates.Microservice.Tests", "Novolis.Templates.Microservice.Tests\Novolis.Templates.Microservice.Tests.csproj", "{821F71ED-A3B1-4A1B-A9C7-533371C994A8}"
 EndProject
@@ -18,14 +22,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		nuget.config = nuget.config
 		README.md = README.md
 		.editorconfig = .editorconfig
-		.gitattributes = .gitattributes
 		.gitignore = .gitignore
-		build.ps1 = build.ps1
 		Directory.Build.props = Directory.Build.props
-		install.ps1 = install.ps1
-		push.ps1 = push.ps1
-		test.ps1 = test.ps1
-		uninstall.ps1 = uninstall.ps1
+		global.json = global.json
 	EndProjectSection
 EndProject
 Global
@@ -50,15 +49,17 @@ Global
 		{93898F7D-B8A0-4CBA-B09B-62F8CA474A90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93898F7D-B8A0-4CBA-B09B-62F8CA474A90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93898F7D-B8A0-4CBA-B09B-62F8CA474A90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2C3D4E5-F6A7-8901-BCDE-F12345678901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2C3D4E5-F6A7-8901-BCDE-F12345678901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2C3D4E5-F6A7-8901-BCDE-F12345678901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2C3D4E5-F6A7-8901-BCDE-F12345678901}.Release|Any CPU.Build.0 = Release|Any CPU
 		{821F71ED-A3B1-4A1B-A9C7-533371C994A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{821F71ED-A3B1-4A1B-A9C7-533371C994A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{821F71ED-A3B1-4A1B-A9C7-533371C994A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{821F71ED-A3B1-4A1B-A9C7-533371C994A8}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E45DA45F-0FBA-4E04-BF84-4A5F8C862B6F}
 	EndGlobalSection
 EndGlobal
