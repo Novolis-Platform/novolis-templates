@@ -1,11 +1,16 @@
-# Package
+# App
 
-Replace with a package README before publishing. See [documentation policy](https://github.com/Novolis-Platform/novolis-governance/blob/main/docs/documentation-policy.md).
+Avalonia **WinExe** entry point for the No-XAML solution.
 
-## Install
+- `Program.cs` — Generic Host + `BuildAvaloniaApp().StartWithClassicDesktopLifetime`
+- `MainWindow.cs` — sample UI wiring Core services and Controls
+- `Worker.cs` — `BackgroundService` heartbeat logging
+- `Extensions/ServicesCollectionExtensions.cs` — DI registration
+
+## Run
 
 ```bash
-dotnet add package Your.PackageId
+dotnet run --project Novolis.Templates.NoXaml.Avalonia.Solution.App
 ```
 
-**Prerequisites:** [.NET 10 SDK](https://dotnet.microsoft.com/download) (`net10.0`).
+References: `.Core`, `.Controls`, `.Models`.
