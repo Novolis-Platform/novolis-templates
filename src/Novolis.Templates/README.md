@@ -1,3 +1,11 @@
+<!-- novolis-pkg-brand:start -->
+<p align="center">
+  <a href="https://github.com/Novolis-Platform/novolis-templates">
+    <img src="https://raw.githubusercontent.com/Novolis-Platform/.github/main/brand/logo-icon.svg" width="72" alt="Novolis"/>
+  </a>
+</p>
+<!-- novolis-pkg-brand:end -->
+
 # Novolis.Templates
 
 `dotnet new` template packs for Novolis solutions and projects.
@@ -46,3 +54,4 @@ dotnet new novolis-noxaml-avalonia-sln -n MyDesktopApp
 - [Getting started](https://github.com/Novolis-Platform/novolis-templates/blob/main/docs/getting-started.md)
 - [Design](https://github.com/Novolis-Platform/novolis-templates/blob/main/docs/design.md)
 - [Documentation policy](https://github.com/Novolis-Platform/novolis-governance/blob/main/docs/documentation-policy.md)
+

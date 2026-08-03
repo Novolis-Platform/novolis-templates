@@ -1,3 +1,11 @@
+<!-- novolis-pkg-brand:start -->
+<p align="center">
+  <a href="https://github.com/Novolis-Platform/novolis-templates">
+    <img src="https://raw.githubusercontent.com/Novolis-Platform/.github/main/brand/logo-icon.svg" width="72" alt="Novolis"/>
+  </a>
+</p>
+<!-- novolis-pkg-brand:end -->
+
 # Game
 
 MonoGame entry project — **Generic Host** + `GameHost` background service.
@@ -29,3 +37,13 @@ dotnet add package Your.PackageId
 ```
 
 **Prerequisites:** [.NET 10 SDK](https://dotnet.microsoft.com/download) (`net10.0`), MonoGame platform workload.
+
+## Install
+
+```bash
+dotnet add package Novolis.Templates.MonoGame
+```
+
+**Prerequisites:** [.NET 10 SDK](https://dotnet.microsoft.com/download) (`net10.0`).
+
+
