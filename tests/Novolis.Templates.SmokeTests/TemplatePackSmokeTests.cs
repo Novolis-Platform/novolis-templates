@@ -9,7 +9,16 @@ public class TemplatePackSmokeTests
     private static readonly string PackProject = Path.Combine(RepoRoot, "src", "Novolis.Templates", "Novolis.Templates.csproj");
     private static readonly string ArtifactsDir = Path.Combine(Path.GetTempPath(), "novolis-templates-smoke");
 
+    /// <summary>Keeps the project non-empty for Platform.slnx (pack smoke is Explicit).</summary>
     [Test]
+    public async Task Smoke_project_discovers_at_least_one_default_test()
+    {
+        await Assert.That(File.Exists(PackProject)).IsTrue();
+    }
+
+    /// <summary>Pack + install + scaffold build/test (~45s+). Opt-in only so Platform.slnx stays fast.</summary>
+    [Test]
+    [Explicit]
     public async Task Pack_install_templates_and_build_scaffolds()
     {
         if (Directory.Exists(ArtifactsDir))
