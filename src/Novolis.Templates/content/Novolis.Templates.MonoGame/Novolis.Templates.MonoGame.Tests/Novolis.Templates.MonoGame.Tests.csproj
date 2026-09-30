@@ -7,7 +7,7 @@
     <IsTestProject>true</IsTestProject>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="TUnit" Version="1.44.39" />
+    <PackageReference Include="TUnit" Version="1.72.4" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Novolis.Templates.MonoGame\Novolis.Templates.MonoGame.csproj" />

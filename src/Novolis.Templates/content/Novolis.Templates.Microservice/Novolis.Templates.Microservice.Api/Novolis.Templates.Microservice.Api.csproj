@@ -6,8 +6,8 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.11" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.20" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.3.2" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Novolis.Templates.Microservice.Data.Migrations\Novolis.Templates.Microservice.Data.Migrations.csproj" />
