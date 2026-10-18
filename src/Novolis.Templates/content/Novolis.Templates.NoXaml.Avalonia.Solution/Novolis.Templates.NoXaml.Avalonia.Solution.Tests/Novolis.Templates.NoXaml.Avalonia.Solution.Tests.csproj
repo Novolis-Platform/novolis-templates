@@ -7,6 +7,6 @@
     <IsTestProject>true</IsTestProject>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="TUnit" Version="1.72.4" />
+    <PackageReference Include="TUnit" Version="1.75.0" />
   </ItemGroup>
 </Project>

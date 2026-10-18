@@ -8,12 +8,12 @@
     <UserSecretsId>dotnet-Novolis.Templates.NoXaml.Avalonia.Solution.App-168bcb7c-26d4-43ff-a59d-7c3728b42d19</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Avalonia" Version="12.1.3" />
-    <PackageReference Include="Avalonia.Desktop" Version="12.1.3" />
-    <PackageReference Include="Avalonia.Fonts.Inter" Version="12.1.3" />
-    <PackageReference Include="Avalonia.Themes.Fluent" Version="12.1.3" />
+    <PackageReference Include="Avalonia" Version="12.1.4" />
+    <PackageReference Include="Avalonia.Desktop" Version="12.1.4" />
+    <PackageReference Include="Avalonia.Fonts.Inter" Version="12.1.4" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="12.1.4" />
     <LibraryReference Include="Novolis.Avalonia.GraphicalProfile" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.12" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.13" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Novolis.Templates.NoXaml.Avalonia.Solution.Controls\Novolis.Templates.NoXaml.Avalonia.Solution.Controls.csproj" />
